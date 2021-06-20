@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #f4f6ff;
+  --secondary-color: #fbd46d;
+  --ora-color: #79fa00;
+  --text-color: #4f8a8b;
+  --button-color: #07031a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-color);
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.logo {
+  align-items: center;
+  display: flex;
+}
+.list {
+  display: flex;
+  align-items: center;
+}
+.list a {
+  text-decoration: none;
+  padding: 25px;
+  color: var(--button-color);
+}
+.button-header-end {
+  margin: 10px;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--button-color);
+}
+.button-header-end a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+main {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+.container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+}
+.container-left h1 {
+  font-size: 5rem;
+  margin-bottom: 12px;
+}
+.container-left h2 {
+  font-size: 2.2rem;
+  opacity: 0.9;
+}
+.container-left a {
+  text-decoration: underline var(--ora-color);
+  display: flex;
+  background: var(--primary-color);
+  border: 1px solid black;
+  padding: 25px;
+  justify-content: center;
+  color: black;
+  font-size: 2rem;
+  margin-top: 80px;
+}
+.container-right {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+.container-content {
+  border: 2px solid black;
+  color: black;
+}
+.container-content h1 {
+  padding: 25px 25px 0 25px;
+}
+.container-content h2 {
+  padding: 0 25px;
+  opacity: 0.6;
+}
+.button-sel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+}
+.container-content a {
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 25px;
+  color: var(--primary-color);
+}
+.container-content #btn-left {
+  background-color: black;
+}
+.container-content #btn-right {
+  border: 1px solid black;
+  color: black;
+}
+@media screen and (max-width: 914px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-left {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container-right {
+    margin: 25px auto;
+    justify-content: center;
+  }
+}
